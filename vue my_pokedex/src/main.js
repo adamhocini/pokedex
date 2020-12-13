@@ -7,7 +7,16 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  components: { App },
-  template: '<App/>'
+    el: '#app',
+    components: { App },
+    template: '<App/>'
+})
+
+const routes = [
+    { path: '/foo', component: Foo },
+    { path: '/bar', component: Bar }
+]
+
+const router = new VueRouter({
+    routes: '/HelloWorld' // raccourci pour `routes: routes`
 })
